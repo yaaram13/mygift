@@ -1,0 +1,23 @@
+---
+
+- hosts: localhost
+  module_defaults:
+    ansible.builtin.file:
+      owner: root
+      group: root
+      mode: 0755
+  tasks:
+    - name: Create file1
+      ansible.builtin.file:
+        state: touch
+        path: /tmp/file1
+
+    - name: Create file2
+      ansible.builtin.file:
+        state: touch
+        path: /tmp/file2
+
+    - name: Create file3
+      ansible.builtin.file:
+        state: touch
+        path: /tmp/file3

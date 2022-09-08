@@ -1,0 +1,8 @@
+
+#!/bin/bash
+
+
+cp camera/*.png $1/
+count=$(ls $1 | wc -l)
+
+echo "On compte $count photos dans le dossier"
